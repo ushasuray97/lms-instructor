@@ -272,14 +272,14 @@
           </li> 
 
           <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#event" aria-expanded="false" aria-controls="event">
+            <a class="nav-link" data-toggle="collapse" href="#discussion" aria-expanded="false" aria-controls="event">
               <i class="icon-clock menu-icon"></i>
               <span class="menu-title">Discussions</span>
               <i class="menu-arrow"></i>
             </a>
-            <div class="collapse" id="event">
+            <div class="collapse" id="discussion">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="./addNotification.html">Add Discussions</a></li> 
+                <li class="nav-item"> <a class="nav-link" href="./addDiscussion.html">Add Discussions</a></li> 
                 <!--   <li class="nav-item"> <a class="nav-link" href="./addAutomation.html">Add Automation</a></li>  --> 
               </ul>
             </div>
@@ -307,7 +307,7 @@
             </a>
             <div class="collapse" id="form-elements">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"><a class="nav-link" href="./addCourse.html">Add Event</a></li>
+                <li class="nav-item"><a class="nav-link" href="./addEvent.html">Add Event</a></li>
               </ul>
             </div>
           </li>
@@ -565,29 +565,55 @@
                 <div class="row">
                   <div class="col-md-12">
                     <div class="form-group row">
-                      <label class="col-sm-3 col-form-label">Group Name</label>
+                      <label class="col-sm-3 col-form-label">Name</label>
                       <div class="col-sm-9">
                         <input type="text" class="form-control" />
                       </div>
                     </div>
                   </div> 
                 </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Date</label>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control" />
+                        </div>
+                      </div>
+                    </div> 
+                  </div>
                    
                 <div class="row">
                   <div class="col-md-12">
                     <div class="form-group row">
-                      <label class="col-sm-3 col-form-label">Description</label>
+                      <label class="col-sm-3 col-form-label">Start time</label>
                       <div class="col-sm-9">
-                        <input type="text" class="form-control" />
+                        <input type="text" class="form-control" disabled/>
                       </div>
                     </div>
                   </div> 
-                </div>  
+                </div> 
                 <div class="row">
-                    <ul style="list-style: none;">
-                      <li> <i class="icon-lock menu-icon"></i> Group Key</li>
-                      <li> <i class="icon-square-minus menu-icon"></i> Price</li> 
-                    </ul>
+                    <div class="col-md-12">
+                      <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Welcome Message</label>
+                        <div class="col-sm-9">
+                          <textarea rows="3" cols="30" placeholder="Welcome message upto 500 characters"></textarea>
+                        </div>
+                      </div>
+                    </div> 
+                </div> 
+                <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Duration</label>
+                        <div class="col-sm-9">
+                          <input type="range" class="form-control" />
+                          <span>Make sure that the duration is below plan limits</span>
+                        </div>
+                      </div>
+                    </div> 
                 </div>
               </form>
               </form>
@@ -598,11 +624,11 @@
       <div class="modal-footer">
         <div class = "btn-group">
           <button type = "button" class = "btn btn-primary dropdown-toggle" data-toggle = "dropdown">
-            Add Group
+            Add Conference
           </button> 
           <ul class = "dropdown-menu button-dropdown" role = "menu">
              <li>Add and add another </li> 
-             <li>Add and go to group index </li> 
+             <li>Add and go to conferences index </li> 
           </ul> 
        </div> 
         <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>

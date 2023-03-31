@@ -19,7 +19,6 @@
   <link rel="stylesheet" href="css/vertical-layout-light/style.css">
   <!-- endinject -->
   <link rel="shortcut icon" href="images/favicon.ico" />
-  
 </head>
 <body>
   <div class="container-scroller">
@@ -46,7 +45,7 @@
           </li>
         </ul>
         <ul class="navbar-nav navbar-nav-right">
-          <li class="nav-item dropdown" id="topNavBar">
+          <li class="nav-item dropdown">
             <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown"> 
               <span>Instructor</span>
             </a>
@@ -70,7 +69,6 @@
               </a>
             </div>
           </li>
-          
           <li class="nav-item dropdown">
             <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown"> 
               <span>Inbox</span>
@@ -272,7 +270,7 @@
               </ul>
             </div>
           </li> 
-         
+
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#discussion" aria-expanded="false" aria-controls="event">
               <i class="icon-clock menu-icon"></i>
@@ -281,11 +279,12 @@
             </a>
             <div class="collapse" id="discussion">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="./addDiscussion.html">Add Discussion</a></li> 
+                <li class="nav-item"> <a class="nav-link" href="./addDiscussion.html">Add Discussions</a></li> 
                 <!--   <li class="nav-item"> <a class="nav-link" href="./addAutomation.html">Add Automation</a></li>  --> 
               </ul>
             </div>
           </li> 
+         
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#import-export" aria-expanded="false" aria-controls="import-export">
               <i class="icon-inbox menu-icon"></i>
@@ -321,167 +320,183 @@
             <div class="col-md-12 grid-margin">
               <div class="row">
                 <div class="col-12 col-xl-8 mb-4 mb-xl-0">
-                  <h3 class="font-weight-bold">Welcome LMS</h3>
-                  <h6 class="font-weight-normal mb-0">Welcome back! Here's what you can do today.</h6>
+                  <h3 class="font-weight-bold">Events</h3>
+                  <h6 class="font-weight-normal mb-0">Welcome back! See all Events.</h6>
                 </div>
                 <div class="col-12 col-xl-4">
                  <div class="justify-content-end d-flex">
                   <div class="dropdown flex-md-grow-1 flex-xl-grow-0">
-                    <button class="btn btn-sm btn-light bg-white dropdown-toggle" type="button" id="dropdownMenuDate2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="color:black">
-                     <i class="mdi mdi-calendar"></i> Today
-                    </button>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuDate2">
-                      <a class="dropdown-item" href="#">January - March</a>
-                      <a class="dropdown-item" href="#">March - June</a>
-                      <a class="dropdown-item" href="#">June - August</a>
-                      <a class="dropdown-item" href="#">August - November</a>
-                    </div>
+                    <button class="btn btn-sm btn-light bg-primary " type="button" id="dropdownMenuDate2"  data-toggle="modal" data-target="#myModal"  aria-haspopup="true" aria-expanded="true">
+                     + Add Event
+                    </button> 
                   </div>
                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div  class="row">
-            <div class="col-md-3 mb-3 stretch-card transparent">
-              <div class="card data-icon-card-primary">
-                <div class="card-body">
-                  <p class="card-title text-white">Number of Users</p>                      
-                  <div class="row">
-                    <div class="col-8 text-white">
-                      <h3>34040</h3>
-                      <p class="text-white font-weight-500 mb-0">Total number of Users</p>
-                    </div>
-                    <div class="col-4 background-icon">
-                    </div>
-                  </div>
-                </div> 
-            </div>
-          </div>
-          <div class="col-md-3 mb-3 stretch-card transparent">
-              <div class="card data-icon-card-primary">
-                <div class="card-body">
-                  <p class="card-title text-white">Number of Courses</p>                      
-                  <div class="row">
-                    <div class="col-8 text-white">
-                      <h3>34040</h3>
-                      <p class="text-white font-weight-500 mb-0">Total number of Courses</p>
-                    </div>
-                    <div class="col-4 background-icon">
-                    </div>
-                  </div>
-                </div> 
-            </div>
-          </div>
-          <div class="col-md-3 mb-3 stretch-card transparent">
-              <div class="card data-icon-card-primary">
-                <div class="card-body">
-                  <p class="card-title text-white">Number of Categories</p>                      
-                  <div class="row">
-                    <div class="col-8 text-white">
-                      <h3>34040</h3>
-                      <p class="text-white font-weight-500 mb-0">Total number of Categories</p>
-                    </div>
-                    <div class="col-4 background-icon">
-                    </div>
-                  </div>
-                </div> 
-            </div>
-          </div>
-          <div class="col-md-3 mb-3 stretch-card transparent">
-              <div class="card data-icon-card-primary">
-                <div class="card-body">
-                  <p class="card-title text-white">Number of Groups</p>                      
-                  <div class="row">
-                    <div class="col-8 text-white">
-                      <h3>34040</h3>
-                      <p class="text-white font-weight-500 mb-0">Total number of Groups</p>
-                    </div>
-                    <div class="col-4 background-icon">
-                    </div>
-                  </div>
-                </div> 
-            </div>
-          </div>
-          </div>
-          <!-- <div class="row">   
-                <div class="col-md-3 mb-3 stretch-card transparent">
-                  <div class="card card-tale">
-                    <div class="card-body">
-                      <p class="mb-4">Total Users</p>
-                      <p class="fs-30 mb-2">4000</p> 
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 mb-3 stretch-card transparent">
-                  <div class="card card-dark-blue">
-                    <div class="card-body">
-                      <p class="mb-4">Total Courses</p>
-                      <p class="fs-30 mb-2">613</p> 
-                    </div>
-                  </div>
-                </div> 
-                <div class="col-md-3 mb-3 stretch-card transparent">
-                  <div class="card card-light-blue">
-                    <div class="card-body">
-                      <p class="mb-4">Total Branches</p>
-                      <p class="fs-30 mb-2">340</p> 
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 mb-3 stretch-card transparent">
-                  <div class="card card-light-danger">
-                    <div class="card-body">
-                      <p class="mb-4">Total Categories</p>
-                      <p class="fs-30 mb-2">470</p> 
-                    </div>
-                  </div>
-                </div> 
-          </div> -->
-          <div class="row">
-            <div class="col-md-6 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <p class="card-title">Course Details</p>
-                  <p class="font-weight-500">The total number of sessions within the date range. It is the period time a user is actively engaged with your website, page or app, etc</p>
-                  <div class="d-flex flex-wrap mb-5">
-                    <div class="mr-5 mt-3">
-                      <p class="text-muted">Course value</p>
-                      <h3 class="text-primary fs-30 font-weight-medium">12.3k</h3>
-                    </div>
-                    <div class="mr-5 mt-3">
-                      <p class="text-muted">Courses</p>
-                      <h3 class="text-primary fs-30 font-weight-medium">14k</h3>
-                    </div>
-                    <div class="mr-5 mt-3">
-                      <p class="text-muted">Users</p>
-                      <h3 class="text-primary fs-30 font-weight-medium">71.56%</h3>
-                    </div>
-                    <div class="mt-3">
-                      <p class="text-muted">Logins</p>
-                      <h3 class="text-primary fs-30 font-weight-medium">34040</h3>
-                    </div> 
-                  </div>
-                  <canvas id="order-chart"></canvas>
+          <div class="col-lg-12 grid-margin stretch-card">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Calender</h4>
+                
+                <div class="table-responsive">
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th>
+                          Sunday
+                        </th>
+                        <th>
+                          Monday
+                        </th>
+                        <th>
+                          Tuesday
+                        </th>
+                         
+                        <th>
+                          Wednesday
+                        </th>
+                        <th>
+                          Thursday
+                        </th>
+                        <th>
+                           Friday
+                        </th>
+                        <th>
+                           Saturday
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="pl-20">
+                          1
+                        </td>
+                        <td>
+                          2
+                        </td>
+                        <td>
+                          3
+                        </td>
+                         
+                        <td>
+                          4
+                        </td>
+                        <td> 
+                          5
+                        </td>
+                        <td>
+                          6
+                        </td>
+                        <td>
+                          7
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          8
+                        </td>
+                        <td>
+                          9
+                        </td>
+                        <td>
+                          10
+                        </td>
+                         
+                        <td>
+                          11
+                        </td>
+                        <td> 
+                          12
+                        </td>
+                        <td>
+                          13
+                        </td>
+                        <td>
+                          14
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          15
+                        </td>
+                        <td>
+                          16
+                        </td>
+                        <td>
+                          17
+                        </td>
+                         
+                        <td>
+                          18
+                        </td>
+                        <td> 
+                          19
+                        </td>
+                        <td>
+                          10
+                        </td>
+                        <td>
+                          21
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          22
+                        </td>
+                        <td>
+                          23
+                        </td>
+                        <td>
+                          24
+                        </td>
+                         
+                        <td>
+                          25
+                        </td>
+                        <td> 
+                          26
+                        </td>
+                        <td>
+                          27
+                        </td>
+                        <td>
+                          28
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          29
+                        </td>
+                        <td>
+                          30
+                        </td>
+                        <td>
+                          31
+                        </td>
+                         
+                        <td>
+                          
+                        </td>
+                        <td> 
+                          
+                        </td>
+                        <td>
+                          
+                        </td>
+                        <td>
+                          
+                        </td>
+                      </tr>
+
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </div>
-            <div class="col-md-6 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                 <div class="d-flex justify-content-between">
-                  <p class="card-title">Report</p>
-                  <a href="#" class="text-info">View all</a>
-                 </div>
-                  <p class="font-weight-500">The total number of sessions within the date range. It is the period time a user is actively engaged with your website, page or app, etc</p>
-                  <div id="sales-legend" class="chartjs-legend mt-4 mb-2"></div>
-                  <canvas id="sales-chart"></canvas>
-                </div>
-              </div>
-            </div>
           </div>
-         
-          
+       
        
         </div>
         <!-- content-wrapper ends -->
@@ -498,7 +513,112 @@
     <!-- page-body-wrapper ends -->
   </div>
   <!-- container-scroller -->
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog"  > 
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4>Add Event </h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button> 
+      </div>
+      <div class="modal-body">
+        <div class="col-12 grid-margin">
+          <div class="card">
+            <div class="card-body">
+              <!-- <h4 class="card-title">Group Details</h4> -->
+              <form class="form-sample"> 
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">Name</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" placeholder="e.g.Our meeting"/>
+                        <!-- <input type="color"> -->
+                      </div>
+                    </div>
+                  </div> 
+                </div>
+                   
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">Date</label>
+                      <div class="col-sm-9">
+                        <input type="date" class="form-control" />
+                      </div>
+                      <label class="col-sm-3 col-form-label">Start Time</label>
+                      <div class="col-sm-9">
+                        <input type="time" class="form-control" />
+                      </div>
+                    </div>
+                  </div> 
+                </div> 
+                
+                <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Duration</label>
+                        <div class="col-sm-9">
+                          <input type="range" class="form-control" />
+                        </div>
+                      </div>
+                    </div> 
+                </div>
 
+                <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Audiance</label>
+                        <div class="col-sm-9">
+                          <select class="form-control">
+                            <option value="private" selected>This is a private event</option>
+                            <option value="specific">Only specific users can see this event</option>
+                            <option value="everybody">Everybody can see this event</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div> 
+                </div>  
+                <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Description</label>
+                        <div class="col-sm-9">
+                          <textarea  class="form-control" rows="4" cols="30" placeholder="Short description upto 500 characters"></textarea>
+                        </div>
+                      </div>
+                    </div> 
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group row">
+                        <!-- <label class="col-sm-3 col-form-label">Duration</label> -->
+                        <div class="col-sm-9">
+                          <input type="checkbox" >This a recurring event
+                        </div>
+                      </div>
+                    </div> 
+                </div>
+              </form>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div> 
+      <div class="modal-footer">
+        <div class = "btn-group">
+          <button type = "button" class = "btn btn-primary">
+            Add Event
+          </button> 
+       </div> 
+        <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+    
+  </div>
+</div> 
   <!-- plugins:js -->
   <script src="vendors/js/vendor.bundle.base.js"></script>
   <!-- endinject -->
@@ -507,7 +627,7 @@
   <script src="vendors/datatables.net/jquery.dataTables.js"></script>
   <script src="vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
   <script src="js/dataTables.select.min.js"></script>
-  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
   <!-- End plugin js for this page -->
   <!-- inject:js -->
   <script src="js/off-canvas.js"></script>
