@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="css/vertical-layout-light/style.css">
   <!-- endinject -->
   <link rel="shortcut icon" href="images/favicon.ico" />
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
   
 </head>
 <body>
@@ -275,7 +276,7 @@
          
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#discussion" aria-expanded="false" aria-controls="event">
-              <i class="icon-clock menu-icon"></i>
+                <i class='far fa-comments'></i>
               <span class="menu-title">Discussions</span>
               <i class="menu-arrow"></i>
             </a>
@@ -302,7 +303,7 @@
           
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
-                <i class="icon-calender menu-icon"></i>
+                <i class="icon-clock menu-icon"></i>
           <span class="menu-title">Calendar</span>
               <i class="menu-arrow"></i>
             </a>
@@ -327,15 +328,12 @@
                 <div class="col-12 col-xl-4">
                  <div class="justify-content-end d-flex">
                   <div class="dropdown flex-md-grow-1 flex-xl-grow-0">
-                    <button class="btn btn-sm btn-light bg-white dropdown-toggle" type="button" id="dropdownMenuDate2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="color:black">
-                     <i class="mdi mdi-calendar"></i> Today
+                    <input type="search" value="search my courses" class="bg-light" />
+                    <button class="btn btn-sm btn-light bg-white" type="button" id="dropdownMenuDate2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="color:black">
+                     <i class="mdi mdi-calendar"></i> Last updated
+                     <i class="bi bi-list"></i>
+                     <i class="bi bi-grid-3x3"></i>
                     </button>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuDate2">
-                      <a class="dropdown-item" href="#">January - March</a>
-                      <a class="dropdown-item" href="#">March - June</a>
-                      <a class="dropdown-item" href="#">June - August</a>
-                      <a class="dropdown-item" href="#">August - November</a>
-                    </div>
                   </div>
                  </div>
                 </div>
@@ -501,6 +499,7 @@
 
   <!-- plugins:js -->
   <script src="vendors/js/vendor.bundle.base.js"></script>
+  
   <!-- endinject -->
   <!-- Plugin js for this page -->
   <script src="vendors/chart.js/Chart.min.js"></script>
