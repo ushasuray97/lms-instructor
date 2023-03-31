@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>LMS</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="vendors/feather/feather.css">
+  <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <link rel="stylesheet" href="vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+  <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" type="text/css" href="js/select.dataTables.min.css">
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="css/vertical-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="images/favicon.ico" />
+</head>
+<body>
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+        <a class="navbar-brand brand-logo mr-5" href="index.html"><img src="images/HMF-logo.png" class="mr-2" alt="logo"/></a>
+        <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/HMF-icon-logo.png" alt="logo"/></a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+        <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+          <span class="icon-menu"></span>
+        </button>
+        <ul class="navbar-nav mr-lg-2">
+          <li class="nav-item nav-search d-none d-lg-block">
+            <div class="input-group">
+              <div class="input-group-prepend hover-cursor" id="navbar-search-icon">
+                <span class="input-group-text" id="search">
+                  <i class="icon-search"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control" id="navbar-search-input" placeholder="Search now" aria-label="search" aria-describedby="search">
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav navbar-nav-right">
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown"> 
+              <span>Instructor</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+                 <a class="dropdown-item preview-item"> 
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Administrator</h6> 
+                </div>
+              </a>
+              <a class="dropdown-item preview-item"> 
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Instuctor</h6>
+                 
+                </div>
+              </a>
+              <a class="dropdown-item preview-item"> 
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Learner</h6>
+                 
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown"> 
+              <span>Inbox</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+                 <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-success">
+                    <i class="icon-inbox mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Go to inbox</h6> 
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-warning">
+                    <i class="icon-outbox mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Send message</h6> 
+                </div>
+              </a> 
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
+              <span>Help</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+                 <a class="dropdown-item preview-item"> 
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Knowledge base</h6>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item"> 
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Tour</h6>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item"> 
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Videos</h6>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item"> 
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Contact support</h6>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item"> 
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Live support</h6>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item"> 
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Success Manager</h6>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
+              <i class="icon-bell mx-0"></i>
+              <span class="count"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+              <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-success">
+                    <i class="ti-info-alt mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Application Error</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    Just now
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-warning">
+                    <i class="ti-settings mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Settings</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    Private message
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-info">
+                    <i class="ti-user mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">New user registration</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    2 days ago
+                  </p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item nav-profile dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
+              <img src="images/faces/face28.jpg" alt="profile"/>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+              <a class="dropdown-item">
+                <i class="ti-settings text-primary"></i>
+                Settings
+              </a>
+              <a class="dropdown-item">
+                <i class="ti-power-off text-primary"></i>
+                Logout
+              </a>
+            </div>
+          </li>
+          <li class="nav-item nav-settings d-none d-lg-flex">
+            <a class="nav-link" href="#">
+              <i class="ti-power-off text-primary"></i> 
+            </a>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+          <i class="ti-power-off text-primary"></i> 
+        </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_settings-panel.html -->
+      <div class="theme-setting-wrapper">
+        <div id="settings-trigger"><i class="ti-settings"></i></div>
+        <div id="theme-settings" class="settings-panel">
+          <i class="settings-close ti-close"></i>
+          <p class="settings-heading">SIDEBAR SKINS</p>
+          <div class="sidebar-bg-options selected" id="sidebar-light-theme"><div class="img-ss rounded-circle bg-light border mr-3"></div>Light</div>
+          <div class="sidebar-bg-options" id="sidebar-dark-theme"><div class="img-ss rounded-circle bg-dark border mr-3"></div>Dark</div>
+          <p class="settings-heading mt-2">HEADER SKINS</p>
+          <div class="color-tiles mx-0 px-4">
+            <div class="tiles success"></div>
+            <div class="tiles warning"></div>
+            <div class="tiles danger"></div>
+            <div class="tiles info"></div>
+            <div class="tiles dark"></div>
+            <div class="tiles default"></div>
+          </div>
+        </div>
+      </div> 
+      <!-- partial -->
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
+                  <i class="icon-book menu-icon"></i>
+              <span class="menu-title">Courses</span>
+                  <i class="menu-arrow"></i>
+                </a>
+                <div class="collapse" id="form-elements">
+                  <ul class="nav flex-column sub-menu">
+                    <li class="nav-item"><a class="nav-link" href="./addCourse.html">Add Course</a></li>
+                  </ul>
+                </div>
+              </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
+              <i class="icon-layers menu-icon"></i>
+              <span class="menu-title">Groups</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="tables">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="./addGroup.html">Add Group</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#event" aria-expanded="false" aria-controls="event">
+              <i class="icon-clock menu-icon"></i>
+              <span class="menu-title">Conferences</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="event">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="./addConference.html">Add Conferences</a></li> 
+                <!--   <li class="nav-item"> <a class="nav-link" href="./addAutomation.html">Add Automation</a></li>  --> 
+              </ul>
+            </div>
+          </li> 
+
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#event" aria-expanded="false" aria-controls="event">
+              <i class="icon-clock menu-icon"></i>
+              <span class="menu-title">Discussions</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="event">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="./addNotification.html">Add Discussions</a></li> 
+                <!--   <li class="nav-item"> <a class="nav-link" href="./addAutomation.html">Add Automation</a></li>  --> 
+              </ul>
+            </div>
+          </li> 
+         
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#import-export" aria-expanded="false" aria-controls="import-export">
+              <i class="icon-inbox menu-icon"></i>
+              <span class="menu-title">Assignments & ILT</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="import-export">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="./import.html">Assignments</a></li> 
+                <li class="nav-item"> <a class="nav-link" href="./export.html">ILT sessions</a></li>
+              </ul>
+            </div>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
+                <i class="icon-calender menu-icon"></i>
+          <span class="menu-title">Calendar</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="form-elements">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="./addCourse.html">Add Event</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-md-12 grid-margin">
+              <div class="row">
+                <div class="col-12 col-xl-8 mb-4 mb-xl-0">
+                  <h3 class="font-weight-bold">Groups</h3>
+                  <h6 class="font-weight-normal mb-0">Welcome back! See all Groups.</h6>
+                </div>
+                <div class="col-12 col-xl-4">
+                 <div class="justify-content-end d-flex">
+                  <div class="dropdown flex-md-grow-1 flex-xl-grow-0">
+                    <button class="btn btn-sm btn-light bg-primary " type="button" id="dropdownMenuDate2"  data-toggle="modal" data-target="#myModal"  aria-haspopup="true" aria-expanded="true">
+                     + Add Group
+                    </button> 
+                  </div>
+                 </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12 grid-margin stretch-card">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Group List</h4>
+                
+                <div class="table-responsive">
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th>
+                          Logo
+                        </th>
+                        <th>
+                          Course name
+                        </th>
+                        <th>
+                          Duration
+                        </th>
+                         
+                        <th>
+                          Start Date
+                        </th>
+                        <th>
+                          Action
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="py-1">
+                          <img src="../../images/faces/face1.jpg" alt="image"/>
+                        </td>
+                        <td>
+                          Java
+                        </td>
+                        <td>
+                          45 Days
+                        </td>
+                         
+                        <td>
+                          May 15, 2023
+                        </td>
+                        <td> 
+                           <button type="button" class="btn btn-info btn-rounded btn-icon">
+                          <i class="ti-pencil"></i>
+                        </button>
+                        <button type="button" class="btn btn-danger btn-rounded btn-icon">
+                          <i class="ti-trash"></i>
+                        </button>
+                      </td>
+                      </tr>
+                      <tr>
+                        <td class="py-1">
+                          <img src="../../images/faces/face2.jpg" alt="image"/>
+                        </td>
+                        <td>
+                          Dot net
+                        </td>
+                        <td>
+                          45 Days
+                        </td>
+                         
+                        <td>
+                          July 1, 2023
+                        </td>
+                        <td> 
+                          <button type="button" class="btn btn-info btn-rounded btn-icon">
+                         <i class="ti-pencil"></i>
+                       </button>
+                       <button type="button" class="btn btn-danger btn-rounded btn-icon">
+                         <i class="ti-trash"></i>
+                       </button>
+                     </td>
+                      </tr>
+                      <tr>
+                        <td class="py-1">
+                          <img src="../../images/faces/face3.jpg" alt="image"/>
+                        </td>
+                        <td>
+                          Python
+                        </td>
+                        <td>
+                          45 Days
+                        </td>
+                         
+                        <td>
+                          Apr 12, 2023
+                        </td>
+                        <td> 
+                          <button type="button" class="btn btn-info btn-rounded btn-icon">
+                         <i class="ti-pencil"></i>
+                       </button>
+                       <button type="button" class="btn btn-danger btn-rounded btn-icon">
+                         <i class="ti-trash"></i>
+                       </button>
+                     </td>
+                      </tr>
+                      <tr>
+                        <td class="py-1">
+                          <img src="../../images/faces/face4.jpg" alt="image"/>
+                        </td>
+                        <td>
+                          Node JS
+                        </td>
+                        <td>
+                          45 Days
+                        </td>
+                         
+                        <td>
+                          May 15, 2023
+                        </td>
+                        <td> 
+                          <button type="button" class="btn btn-info btn-rounded btn-icon">
+                         <i class="ti-pencil"></i>
+                       </button>
+                       <button type="button" class="btn btn-danger btn-rounded btn-icon">
+                         <i class="ti-trash"></i>
+                       </button>
+                     </td>
+                      </tr>
+                      <tr>
+                        <td class="py-1">
+                          <img src="../../images/faces/face5.jpg" alt="image"/>
+                        </td>
+                        <td>
+                          UI Technology
+                        </td>
+                        <td>
+                          45 Days
+                        </td>
+                         
+                        <td>
+                          May 03, 2023
+                        </td>
+                        <td> 
+                          <button type="button" class="btn btn-info btn-rounded btn-icon">
+                         <i class="ti-pencil"></i>
+                       </button>
+                       <button type="button" class="btn btn-danger btn-rounded btn-icon">
+                         <i class="ti-trash"></i>
+                       </button>
+                     </td>
+                      </tr>
+                      <tr>
+                        <td class="py-1">
+                          <img src="../../images/faces/face6.jpg" alt="image"/>
+                        </td>
+                        <td>
+                          MERN Stack
+                        </td>
+                        <td>
+                          45 Days
+                        </td>
+                         
+                        <td>
+                          April 05, 2023
+                        </td>
+                        <td> 
+                          <button type="button" class="btn btn-info btn-rounded btn-icon">
+                         <i class="ti-pencil"></i>
+                       </button>
+                       <button type="button" class="btn btn-danger btn-rounded btn-icon">
+                         <i class="ti-trash"></i>
+                       </button>
+                     </td>
+                      </tr>
+                      <tr>
+                        <td class="py-1">
+                          <img src="../../images/faces/face7.jpg" alt="image"/>
+                        </td>
+                        <td>
+                         MEAN Stack
+                        </td>
+                        <td>
+                          45 Days
+                        </td>
+                         
+                        <td>
+                          June 16, 2023
+                        </td>
+                        <td> 
+                          <button type="button" class="btn btn-info btn-rounded btn-icon">
+                         <i class="ti-pencil"></i>
+                       </button>
+                       <button type="button" class="btn btn-danger btn-rounded btn-icon">
+                         <i class="ti-trash"></i>
+                       </button>
+                     </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+       
+       
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2023. All rights reserved.</span>
+            </div> 
+        </footer> 
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>   
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog"  > 
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4>Add New Group </h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button> 
+      </div>
+      <div class="modal-body">
+        <div class="col-12 grid-margin">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Group Details</h4>
+              <form class="form-sample"> 
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">Group Name</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                  </div> 
+                </div>
+                   
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">Description</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                  </div> 
+                </div>  
+                <div class="row">
+                    <ul style="list-style: none;">
+                      <li> <i class="icon-lock menu-icon"></i> Group Key</li>
+                      <li> <i class="icon-square-minus menu-icon"></i> Price</li> 
+                    </ul>
+                </div>
+              </form>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div> 
+      <div class="modal-footer">
+        <div class = "btn-group">
+          <button type = "button" class = "btn btn-primary dropdown-toggle" data-toggle = "dropdown">
+            Add Group
+          </button> 
+          <ul class = "dropdown-menu button-dropdown" role = "menu">
+             <li>Add and add another </li> 
+             <li>Add and go to group index </li> 
+          </ul> 
+       </div> 
+        <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+    
+  </div>
+</div> 
+  <!-- plugins:js -->
+  <script src="vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <script src="vendors/chart.js/Chart.min.js"></script>
+  <script src="vendors/datatables.net/jquery.dataTables.js"></script>
+  <script src="vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+  <script src="js/dataTables.select.min.js"></script>
+
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="js/off-canvas.js"></script>
+  <script src="js/hoverable-collapse.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/settings.js"></script>
+  <script src="js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="js/dashboard.js"></script>
+  <script src="js/Chart.roundedBarCharts.js"></script>
+  <!-- End custom js for this page-->
+</body>
+
+</html>
+
