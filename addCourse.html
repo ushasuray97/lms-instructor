@@ -217,6 +217,10 @@
           <p class="settings-heading">SIDEBAR SKINS</p>
           <div class="sidebar-bg-options selected" id="sidebar-light-theme"><div class="img-ss rounded-circle bg-light border mr-3"></div>Light</div>
           <div class="sidebar-bg-options" id="sidebar-dark-theme"><div class="img-ss rounded-circle bg-dark border mr-3"></div>Dark</div>
+          <div class="sidebar-bg-options" id="sidebar-info-theme"><div class="img-ss rounded-circle bg-info border mr-3"></div>Blue</div>
+          <div class="sidebar-bg-options" id="sidebar-warning-theme"><div class="img-ss rounded-circle bg-warning border mr-3"></div>Yellow</div>
+          <div class="sidebar-bg-options" id="sidebar-success-theme"><div class="img-ss rounded-circle bg-success border mr-3"></div>Green</div>
+          <div class="sidebar-bg-options" id="sidebar-danger-theme"><div class="img-ss rounded-circle bg-danger border mr-3"></div>Red</div>
           <p class="settings-heading mt-2">HEADER SKINS</p>
           <div class="color-tiles mx-0 px-4">
             <div class="tiles success"></div>
@@ -299,12 +303,12 @@
           </li>
           
           <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
+            <a class="nav-link" data-toggle="collapse" href="#calendar" aria-expanded="false" aria-controls="form-elements">
                 <i class="icon-calender menu-icon"></i>
           <span class="menu-title">Calendar</span>
               <i class="menu-arrow"></i>
             </a>
-            <div class="collapse" id="form-elements">
+            <div class="collapse" id="calendar">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"><a class="nav-link" href="./addEvent.html">Add Event</a></li>
               </ul>
@@ -373,12 +377,12 @@
                           May 15, 2023
                         </td>
                         <td> 
-                           <button type="button" class="btn btn-info btn-rounded btn-icon">
-                          <i class="ti-pencil"></i>
-                        </button>
-                        <button type="button" class="btn btn-danger btn-rounded btn-icon">
-                          <i class="ti-trash"></i>
-                        </button>
+                          <button type="button" class="btn btn-info btn-rounded btn-icon" data-toggle="form" data-target="#editModal">
+                            <i class="ti-pencil"></i>
+                          </button>
+                          <button type="button" class="btn btn-danger btn-rounded btn-icon" data-toggle="modal" data-target="#trashModal">
+                            <i class="ti-trash"></i>
+                          </button>
                       </td>
                       </tr>
                       <tr>
@@ -394,12 +398,12 @@
                           July 1, 2023
                         </td>
                         <td> 
-                          <button type="button" class="btn btn-info btn-rounded btn-icon">
-                         <i class="ti-pencil"></i>
-                       </button>
-                       <button type="button" class="btn btn-danger btn-rounded btn-icon">
-                         <i class="ti-trash"></i>
-                       </button>
+                          <button type="button" class="btn btn-info btn-rounded btn-icon" data-toggle="form" data-target="#editModal">
+                            <i class="ti-pencil"></i>
+                          </button>
+                          <button type="button" class="btn btn-danger btn-rounded btn-icon" data-toggle="modal" data-target="#trashModal">
+                            <i class="ti-trash"></i>
+                          </button>
                      </td>
                       </tr>
                       <tr>
@@ -415,12 +419,12 @@
                           Apr 12, 2023
                         </td>
                         <td> 
-                          <button type="button" class="btn btn-info btn-rounded btn-icon">
-                         <i class="ti-pencil"></i>
-                       </button>
-                       <button type="button" class="btn btn-danger btn-rounded btn-icon">
-                         <i class="ti-trash"></i>
-                       </button>
+                          <button type="button" class="btn btn-info btn-rounded btn-icon" data-toggle="form" data-target="#editModal">
+                            <i class="ti-pencil"></i>
+                          </button>
+                          <button type="button" class="btn btn-danger btn-rounded btn-icon" data-toggle="modal" data-target="#trashModal">
+                            <i class="ti-trash"></i>
+                          </button>
                      </td>
                       </tr>
                       <tr>
@@ -436,12 +440,12 @@
                           May 15, 2023
                         </td>
                         <td> 
-                          <button type="button" class="btn btn-info btn-rounded btn-icon">
-                         <i class="ti-pencil"></i>
-                       </button>
-                       <button type="button" class="btn btn-danger btn-rounded btn-icon">
-                         <i class="ti-trash"></i>
-                       </button>
+                          <button type="button" class="btn btn-info btn-rounded btn-icon" data-toggle="form" data-target="#editModal">
+                            <i class="ti-pencil"></i>
+                          </button>
+                          <button type="button" class="btn btn-danger btn-rounded btn-icon" data-toggle="modal" data-target="#trashModal">
+                            <i class="ti-trash"></i>
+                          </button>
                      </td>
                       </tr>
                       <tr>
@@ -457,12 +461,12 @@
                           May 03, 2023
                         </td>
                         <td> 
-                          <button type="button" class="btn btn-info btn-rounded btn-icon">
-                         <i class="ti-pencil"></i>
-                       </button>
-                       <button type="button" class="btn btn-danger btn-rounded btn-icon">
-                         <i class="ti-trash"></i>
-                       </button>
+                          <button type="button" class="btn btn-info btn-rounded btn-icon" data-toggle="form" data-target="#editModal">
+                            <i class="ti-pencil"></i>
+                          </button>
+                          <button type="button" class="btn btn-danger btn-rounded btn-icon" data-toggle="modal" data-target="#trashModal">
+                            <i class="ti-trash"></i>
+                          </button>
                      </td>
                       </tr>
                       <tr>
@@ -478,12 +482,12 @@
                           April 05, 2023
                         </td>
                         <td> 
-                          <button type="button" class="btn btn-info btn-rounded btn-icon">
-                         <i class="ti-pencil"></i>
-                       </button>
-                       <button type="button" class="btn btn-danger btn-rounded btn-icon">
-                         <i class="ti-trash"></i>
-                       </button>
+                          <button type="button" class="btn btn-info btn-rounded btn-icon" data-toggle="form" data-target="#editModal">
+                            <i class="ti-pencil"></i>
+                          </button>
+                          <button type="button" class="btn btn-danger btn-rounded btn-icon" data-toggle="modal" data-target="#trashModal">
+                            <i class="ti-trash"></i>
+                          </button>
                      </td>
                       </tr>
                       <tr>
@@ -499,12 +503,12 @@
                           June 16, 2023
                         </td>
                         <td> 
-                          <button type="button" class="btn btn-info btn-rounded btn-icon">
-                         <i class="ti-pencil"></i>
-                       </button>
-                       <button type="button" class="btn btn-danger btn-rounded btn-icon">
-                         <i class="ti-trash"></i>
-                       </button>
+                          <button type="button" class="btn btn-info btn-rounded btn-icon" data-toggle="form" data-target="#editModal">
+                            <i class="ti-pencil"></i>
+                          </button>
+                          <button type="button" class="btn btn-danger btn-rounded btn-icon" data-toggle="modal" data-target="#trashModal">
+                            <i class="ti-trash"></i>
+                          </button>
                      </td>
                       </tr>
                     </tbody>
