@@ -239,18 +239,25 @@
       <!-- partial:partials/_sidebar.html -->
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
-            <li class="nav-item">
-                <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
-                  <i class="icon-book menu-icon"></i>
-              <span class="menu-title">Courses</span>
-                  <i class="menu-arrow"></i>
-                </a>
-                <div class="collapse" id="form-elements">
-                  <ul class="nav flex-column sub-menu">
-                    <li class="nav-item"><a class="nav-link" href="./addCourse.html">Add Course</a></li>
-                  </ul>
-                </div>
-              </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
+              <i class="icon-book menu-icon"></i>
+          <span class="menu-title">Courses</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="form-elements">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="./addCourse.html">Add Course</a></li>
+                <!-- <li class="nav-item"><a class="nav-link" href="./courseStore.html">Course Store</a></li> -->
+              </ul>
+            </div>
+          </li>
           
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
@@ -265,55 +272,52 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#event" aria-expanded="false" aria-controls="event">
+            <a class="nav-link" data-toggle="collapse" href="#conference" aria-expanded="false" aria-controls="event">
               <i class="icon-clock menu-icon"></i>
               <span class="menu-title">Conferences</span>
               <i class="menu-arrow"></i>
             </a>
-            <div class="collapse" id="event">
+            <div class="collapse" id="conference">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="./addConference.html">Add Conferences</a></li> 
-                <!--   <li class="nav-item"> <a class="nav-link" href="./addAutomation.html">Add Automation</a></li>  --> 
+                <li class="nav-item"> <a class="nav-link" href="./addConference.html">Add Conference</a></li> 
+                <!-- <li class="nav-item"> <a class="nav-link" href="./addAutomation.html">Add Automation</a></li>  --> 
               </ul>
             </div>
           </li> 
          
           <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#discussion" aria-expanded="false" aria-controls="event">
-                <i class='far fa-comments'></i>
+            <a class="nav-link" data-toggle="collapse" href="#discussion" aria-expanded="false" aria-controls="import-export">
+              <i class="icon-inbox menu-icon"></i>
               <span class="menu-title">Discussions</span>
               <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="discussion">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="./addDiscussion.html">Add Discussion</a></li> 
-                <!--   <li class="nav-item"> <a class="nav-link" href="./addAutomation.html">Add Automation</a></li>  --> 
-              </ul>
-            </div>
-          </li> 
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#import-export" aria-expanded="false" aria-controls="import-export">
-              <i class="icon-inbox menu-icon"></i>
-              <span class="menu-title">Assignments & ILT</span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="import-export">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="./import.html">Assignments</a></li> 
-                <li class="nav-item"> <a class="nav-link" href="./export.html">ILT sessions</a></li>
               </ul>
             </div>
           </li>
-          
           <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#calendar" aria-expanded="false" aria-controls="form-elements">
-                <i class="icon-clock menu-icon"></i>
-          <span class="menu-title">Calendar</span>
+            <a class="nav-link" data-toggle="collapse" href="#assignment" aria-expanded="false" aria-controls="report">
+              <i class="icon-pie-graph menu-icon"></i>
+              <span class="menu-title">Assignments & ILT</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="assignment">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="./addAssignment.httml"><i class="icon-head menu-icon" style="border: 1px solid black; border-radius: 5px; padding: 10px;">4</i></a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#calendar" aria-expanded="false" aria-controls="account-setting">
+              <i class="icon-clock menu-icon"></i>
+              <span class="menu-title">Calendar</span>
               <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="calendar">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"><a class="nav-link" href="./addEvent.html">Add Event</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./addEvent.html">Add Event</a></li>
               </ul>
             </div>
           </li>

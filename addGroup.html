@@ -47,7 +47,7 @@
         <ul class="navbar-nav navbar-nav-right">
           <li class="nav-item dropdown">
             <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown"> 
-              <span>Instructor</span>
+              <span>Administrator</span>
             </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
                  <a class="dropdown-item preview-item"> 
@@ -65,6 +65,123 @@
                 <div class="preview-item-content">
                   <h6 class="preview-subject font-weight-normal">Learner</h6>
                  
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown"> 
+               <span>Favaourite </span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+                 <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-primary">
+                    <i class="icon-grid mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Home</h6>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-primary">
+                    <i class="ti-user mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">User</h6>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-primary">
+                    <i class="icon-book mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Course</h6>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-primary">
+                    <i class="icon-bag mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Course Store</h6>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-primary">
+                    <i class="icon-menu mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Categories</h6>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-primary">
+                    <i class="icon-layers mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Groups</h6>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-primary">
+                    <i class="icon-archive mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Branches</h6>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-primary">
+                    <i class="icon-pie-graph mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Reports</h6>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-primary">
+                    <i class="icon-inbox mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">import-export</h6>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-primary">
+                    <i class="icon-clock mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Event Engine</h6>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-primary">
+                    <i class="ti-settings mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Account & Settings</h6>
                 </div>
               </a>
             </div>
@@ -236,18 +353,25 @@
       <!-- partial:partials/_sidebar.html -->
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
-            <li class="nav-item">
-                <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
-                  <i class="icon-book menu-icon"></i>
-              <span class="menu-title">Courses</span>
-                  <i class="menu-arrow"></i>
-                </a>
-                <div class="collapse" id="form-elements">
-                  <ul class="nav flex-column sub-menu">
-                    <li class="nav-item"><a class="nav-link" href="./addCourse.html">Add Course</a></li>
-                  </ul>
-                </div>
-              </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
+              <i class="icon-book menu-icon"></i>
+          <span class="menu-title">Courses</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="form-elements">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="./addCourse.html">Add Course</a></li>
+                <!-- <li class="nav-item"><a class="nav-link" href="./courseStore.html">Course Store</a></li> -->
+              </ul>
+            </div>
+          </li>
           
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
@@ -262,56 +386,52 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#event" aria-expanded="false" aria-controls="event">
+            <a class="nav-link" data-toggle="collapse" href="#conference" aria-expanded="false" aria-controls="event">
               <i class="icon-clock menu-icon"></i>
               <span class="menu-title">Conferences</span>
               <i class="menu-arrow"></i>
             </a>
-            <div class="collapse" id="event">
+            <div class="collapse" id="conference">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="./addConference.html">Add Conferences</a></li> 
-                <!--   <li class="nav-item"> <a class="nav-link" href="./addAutomation.html">Add Automation</a></li>  --> 
-              </ul>
-            </div>
-          </li> 
-
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#discussion" aria-expanded="false" aria-controls="event">
-              <i class="icon-clock menu-icon"></i>
-              <span class="menu-title">Discussions</span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="discussion">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="./addDiscussion.html">Add Discussions</a></li> 
-                <!--   <li class="nav-item"> <a class="nav-link" href="./addAutomation.html">Add Automation</a></li>  --> 
+                <li class="nav-item"> <a class="nav-link" href="./addConference.html">Add Conference</a></li> 
+                <!-- <li class="nav-item"> <a class="nav-link" href="./addAutomation.html">Add Automation</a></li>  --> 
               </ul>
             </div>
           </li> 
          
           <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#import-export" aria-expanded="false" aria-controls="import-export">
+            <a class="nav-link" data-toggle="collapse" href="#discussion" aria-expanded="false" aria-controls="import-export">
               <i class="icon-inbox menu-icon"></i>
-              <span class="menu-title">Assignments & ILT</span>
+              <span class="menu-title">Discussions</span>
               <i class="menu-arrow"></i>
             </a>
-            <div class="collapse" id="import-export">
+            <div class="collapse" id="discussion">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="./import.html">Assignments</a></li> 
-                <li class="nav-item"> <a class="nav-link" href="./export.html">ILT sessions</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./addDiscussion.html">Add Discussion</a></li> 
               </ul>
             </div>
           </li>
-          
           <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#calendar" aria-expanded="false" aria-controls="form-elements">
-                <i class="icon-calender menu-icon"></i>
-          <span class="menu-title">Calendar</span>
+            <a class="nav-link" data-toggle="collapse" href="#assignment" aria-expanded="false" aria-controls="report">
+              <i class="icon-pie-graph menu-icon"></i>
+              <span class="menu-title">Assignments & ILT</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="assignment">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="./addAssignment.httml"><i class="icon-head menu-icon" style="border: 1px solid black; border-radius: 5px; padding: 10px;">4</i></a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#calendar" aria-expanded="false" aria-controls="account-setting">
+              <i class="icon-contract menu-icon"></i>
+              <span class="menu-title">Calendar</span>
               <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="calendar">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"><a class="nav-link" href="./addEvent.html">Add Event</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./addEvent.html">Add Event</a></li>
               </ul>
             </div>
           </li>
@@ -344,18 +464,23 @@
               <div class="card-body">
                 <h4 class="card-title">Group List</h4>
                 
-                <div class="table-responsive-sm">
+                <div class="table-responsive">
                   <table class="table table-striped">
                     <thead>
                       <tr>
-                        
                         <th>
-                          Name
+                          Logo
                         </th>
                         <th>
-                          Description
+                          Group name
+                        </th>
+                        <th>
+                          Team size
                         </th>
                          
+                        <th>
+                          Created Date
+                        </th>
                         <th>
                           Action
                         </th>
@@ -363,117 +488,158 @@
                     </thead>
                     <tbody>
                       <tr>
-                        
+                        <td class="py-1">
+                          <img src="../../images/faces/face1.jpg" alt="image"/>
+                        </td>
                         <td>
                           Java
                         </td>
                         <td>
-                          OOP language 
+                          45 
                         </td>
                          
-                        
+                        <td>
+                          May 15, 2023
+                        </td>
                         <td> 
-                           <button type="button" class="btn btn-info btn-rounded btn-icon">
+                           <button type="button" class="btn btn-info btn-rounded btn-icon" data-toggle="modal" data-target="#editModal">
                           <i class="ti-pencil"></i>
                         </button>
-                        <button type="button" class="btn btn-danger btn-rounded btn-icon">
+                        <button type="button" class="btn btn-danger btn-rounded btn-icon"  data-toggle="modal" data-target="#trashModal">
                           <i class="ti-trash"></i>
                         </button>
                       </td>
                       </tr>
                       <tr>
-                        
+                        <td class="py-1">
+                          <img src="../../images/faces/face2.jpg" alt="image"/>
+                        </td>
                         <td>
                           Dot net
                         </td>
                         <td>
-                          computer technology
+                          45 
                         </td>
                          
-                        
+                        <td>
+                          July 1, 2023
+                        </td>
                         <td> 
-                          <button type="button" class="btn btn-info btn-rounded btn-icon">
-                         <i class="ti-pencil"></i>
+                          <button type="button" class="btn btn-info btn-rounded btn-icon" data-toggle="modal" data-target="#editModal"><i class="ti-pencil"></i>
                        </button>
-                       <button type="button" class="btn btn-danger btn-rounded btn-icon">
+                       <button type="button" class="btn btn-danger btn-rounded btn-icon" data-toggle="modal" data-target="#trashModal">
                          <i class="ti-trash"></i>
                        </button>
                      </td>
                       </tr>
                       <tr>
-                        
+                        <td class="py-1">
+                          <img src="../../images/faces/face3.jpg" alt="image"/>
+                        </td>
                         <td>
                           Python
                         </td>
                         <td>
-                          programming                      
+                          45 
                         </td>
                          
-                        
+                        <td>
+                          Apr 12, 2023
+                        </td>
                         <td> 
-                          <button type="button" class="btn btn-info btn-rounded btn-icon" data-toggle="form" data-target="#editModal">
-                            <i class="ti-pencil"></i>
-                          </button>
-                          <button type="button" class="btn btn-danger btn-rounded btn-icon" data-toggle="modal" data-target="#trashModal">
-                            <i class="ti-trash"></i>
-                          </button>
+                          <button type="button" class="btn btn-info btn-rounded btn-icon" data-toggle="modal" data-target="#editModal"><i class="ti-pencil"></i>
+                       </button>
+                       <button type="button" class="btn btn-danger btn-rounded btn-icon" data-toggle="modal" data-target="#trashModal">
+                         <i class="ti-trash"></i>
+                       </button>
                      </td>
                       </tr>
                       <tr>
-                        
+                        <td class="py-1">
+                          <img src="../../images/faces/face4.jpg" alt="image"/>
+                        </td>
                         <td>
                           Node JS
                         </td>
                         <td>
-                          javascript
+                          45 
                         </td>
                          
-                        
+                        <td>
+                          May 15, 2023
+                        </td>
                         <td> 
-                          <button type="button" class="btn btn-info btn-rounded btn-icon" data-toggle="form" data-target="#editModal">
-                            <i class="ti-pencil"></i>
-                          </button>
-                          <button type="button" class="btn btn-danger btn-rounded btn-icon" data-toggle="modal" data-target="#trashModal">
-                            <i class="ti-trash"></i>
-                          </button>
+                          <button type="button" class="btn btn-info btn-rounded btn-icon" data-toggle="modal" data-target="#editModal"><i class="ti-pencil"></i>
+                       </button>
+                       <button type="button" class="btn btn-danger btn-rounded btn-icon" data-toggle="modal" data-target="#trashModal">
+                         <i class="ti-trash"></i>
+                       </button>
                      </td>
                       </tr>
                       <tr>
-                        
+                        <td class="py-1">
+                          <img src="../../images/faces/face5.jpg" alt="image"/>
+                        </td>
                         <td>
                           UI Technology
                         </td>
                         <td>
-                          front end
+                          45 
                         </td>
                          
-                       
+                        <td>
+                          May 03, 2023
+                        </td>
                         <td> 
-                          <button type="button" class="btn btn-info btn-rounded btn-icon" data-toggle="form" data-target="#editModal">
-                            <i class="ti-pencil"></i>
-                          </button>
-                          <button type="button" class="btn btn-danger btn-rounded btn-icon" data-toggle="modal" data-target="#trashModal">
-                            <i class="ti-trash"></i>
-                          </button>
+                          <button type="button" class="btn btn-info btn-rounded btn-icon" data-toggle="modal" data-target="#editModal"><i class="ti-pencil"></i>
+                       </button>
+                       <button type="button" class="btn btn-danger btn-rounded btn-icon" data-toggle="modal" data-target="#trashModal">
+                         <i class="ti-trash"></i>
+                       </button>
                      </td>
                       </tr>
                       <tr>
-                        
+                        <td class="py-1">
+                          <img src="../../images/faces/face6.jpg" alt="image"/>
+                        </td>
                         <td>
                           MERN Stack
                         </td>
                         <td>
-                          Full stack development                          
+                          45 
                         </td>
                          
-                        
+                        <td>
+                          April 05, 2023
+                        </td>
                         <td> 
-                          <button type="button" class="btn btn-info btn-rounded btn-icon" data-toggle="form" data-target="#editModal">
-                            <i class="ti-pencil"></i>
-                          </button>
-                          <button type="button" class="btn btn-danger btn-rounded btn-icon" data-toggle="modal" data-target="#trashModal">
-                            <i class="ti-trash"></i>
-                          </button>
+                          <button type="button" class="btn btn-info btn-rounded btn-icon" data-toggle="modal" data-target="#editModal"><i class="ti-pencil"></i>
+                       </button>
+                       <button type="button" class="btn btn-danger btn-rounded btn-icon" data-toggle="modal" data-target="#trashModal">
+                         <i class="ti-trash"></i>
+                       </button>
+                     </td>
+                      </tr>
+                      <tr>
+                        <td class="py-1">
+                          <img src="../../images/faces/face7.jpg" alt="image"/>
+                        </td>
+                        <td>
+                         MEAN Stack
+                        </td>
+                        <td>
+                          45 
+                        </td>
+                         
+                        <td>
+                          June 16, 2023
+                        </td>
+                        <td> 
+                          <button type="button" class="btn btn-info btn-rounded btn-icon" data-toggle="modal" data-target="#editModal"><i class="ti-pencil"></i>
+                       </button>
+                       <button type="button" class="btn btn-danger btn-rounded btn-icon" data-toggle="modal" data-target="#trashModal">
+                         <i class="ti-trash"></i>
+                       </button>
                      </td>
                       </tr>
                     </tbody>
@@ -499,7 +665,7 @@
     <!-- page-body-wrapper ends -->
   </div>
   <!-- container-scroller -->
-<!-- Modal -->
+<!-- Add Modal -->
 <div class="modal fade" id="myModal" role="dialog">
   <div class="modal-dialog"  > 
     <!-- Modal content-->
@@ -536,9 +702,80 @@
                   </div> 
                 </div>  
                 <div class="row">
+                  <div>
+                    <a href="#" onclick="showMe('groupKey')"><i class="icon-lock menu-icon"></i> Group Key</a>
+                  </div>
+                </div>
+                <div class="row"> 
+                  <div id="groupKey"  class="listTab col-sm-12" style="display: none;">
+                    <div class="form-group row ">
+                      <label class=" col-sm-6 col-form-label">Group Key </label>
+                      <div class=" col-sm-6" ><input type="text" value="groupKey"/>
+                      </div>
+                    </div>
+                  </div>
+              </form>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div> 
+      <div class="modal-footer">
+        <div class = "btn-group">
+          <button type = "button" class = "btn btn-primary dropdown-toggle" data-toggle = "dropdown">
+            Save
+          </button> 
+          <ul class = "dropdown-menu button-dropdown" role = "menu">
+             <li>Save and add another </li> 
+             <li>Save and go to group index </li> 
+          </ul> 
+       </div> 
+        <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+    
+  </div>
+</div> 
+<!-- Edit Modal -->
+<div class="modal fade" id="editModal" role="dialog">
+  <div class="modal-dialog"  > 
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4>Edit Group </h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button> 
+      </div>
+      <div class="modal-body">
+        <div class="col-12 grid-margin">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Group Details</h4>
+              <form class="form-sample"> 
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">Group Name</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                  </div> 
+                </div>
+                   
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">Description</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                  </div> 
+                </div>  
+                <div class="row">
                     <ul style="list-style: none;">
                       <li> <i class="icon-lock menu-icon"></i> Group Key</li>
-                      <li> <i class="icon-square-minus menu-icon"></i> Price</li> 
+                      <!-- <li> <i class="icon-square-minus menu-icon"></i> Price</li>  -->
                     </ul>
                 </div>
               </form>
@@ -550,13 +787,42 @@
       <div class="modal-footer">
         <div class = "btn-group">
           <button type = "button" class = "btn btn-primary dropdown-toggle" data-toggle = "dropdown">
-            Add Group
+            Update
           </button> 
           <ul class = "dropdown-menu button-dropdown" role = "menu">
-             <li>Add and add another </li> 
-             <li>Add and go to group index </li> 
+             <li>Update and add another </li> 
+             <li>Update and go to group index </li> 
           </ul> 
        </div> 
+        <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+    
+  </div>
+</div> 
+<!--  Delete Modal -->
+<div class="modal fade" id="trashModal" role="dialog">
+  <div class="modal-dialog"  > 
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4>Delete Group </h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button> 
+      </div>
+      <div class="modal-body">
+        <div class="col-12 grid-margin">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Are you sure, you want to delete Group Details</h4>
+              
+            </div>
+          </div>
+        </div>
+      </div> 
+      <div class="modal-footer"> 
+          <button type = "button" class = "btn btn-primary">
+            Delete
+          </button>  
         <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
       </div>
     </div>
@@ -566,6 +832,16 @@
   <!-- plugins:js -->
   <script src="vendors/js/vendor.bundle.base.js"></script>
   <!-- endinject -->
+  <script>
+    function showMe(event){     
+    let i, listTab;
+      listTab = document.getElementsByClassName("listTab");
+      for (i = 0; i < listTab.length; i++) {
+        listTab[i].style.display = "none";
+      }
+      document.getElementById(event).style.display = "block"; 
+    }  
+  </script>
   <!-- Plugin js for this page -->
   <script src="vendors/chart.js/Chart.min.js"></script>
   <script src="vendors/datatables.net/jquery.dataTables.js"></script>

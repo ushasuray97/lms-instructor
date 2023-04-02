@@ -236,18 +236,25 @@
       <!-- partial:partials/_sidebar.html -->
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
-            <li class="nav-item">
-                <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
-                  <i class="icon-book menu-icon"></i>
-              <span class="menu-title">Courses</span>
-                  <i class="menu-arrow"></i>
-                </a>
-                <div class="collapse" id="form-elements">
-                  <ul class="nav flex-column sub-menu">
-                    <li class="nav-item"><a class="nav-link" href="./addCourse.html">Add Course</a></li>
-                  </ul>
-                </div>
-              </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
+              <i class="icon-book menu-icon"></i>
+          <span class="menu-title">Courses</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="form-elements">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="./addCourse.html">Add Course</a></li>
+                <!-- <li class="nav-item"><a class="nav-link" href="./courseStore.html">Course Store</a></li> -->
+              </ul>
+            </div>
+          </li>
           
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
@@ -262,55 +269,52 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#event" aria-expanded="false" aria-controls="event">
+            <a class="nav-link" data-toggle="collapse" href="#conference" aria-expanded="false" aria-controls="event">
               <i class="icon-clock menu-icon"></i>
               <span class="menu-title">Conferences</span>
               <i class="menu-arrow"></i>
             </a>
-            <div class="collapse" id="event">
+            <div class="collapse" id="conference">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="./addConference.html">Add Conferences</a></li> 
-                <!--   <li class="nav-item"> <a class="nav-link" href="./addAutomation.html">Add Automation</a></li>  --> 
+                <li class="nav-item"> <a class="nav-link" href="./addConference.html">Add Conference</a></li> 
+                <!-- <li class="nav-item"> <a class="nav-link" href="./addAutomation.html">Add Automation</a></li>  --> 
               </ul>
             </div>
           </li> 
          
           <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#discussion" aria-expanded="false" aria-controls="event">
-              <i class="icon-clock menu-icon"></i>
+            <a class="nav-link" data-toggle="collapse" href="#discussion" aria-expanded="false" aria-controls="import-export">
+              <i class="icon-inbox menu-icon"></i>
               <span class="menu-title">Discussions</span>
               <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="discussion">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="./addDiscussion.html">Add Discussion</a></li> 
-                <!--   <li class="nav-item"> <a class="nav-link" href="./addAutomation.html">Add Automation</a></li>  --> 
-              </ul>
-            </div>
-          </li> 
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#import-export" aria-expanded="false" aria-controls="import-export">
-              <i class="icon-inbox menu-icon"></i>
-              <span class="menu-title">Assignments & ILT</span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="import-export">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="./import.html">Assignments</a></li> 
-                <li class="nav-item"> <a class="nav-link" href="./export.html">ILT sessions</a></li>
               </ul>
             </div>
           </li>
-          
           <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#calendar" aria-expanded="false" aria-controls="form-elements">
-                <i class="icon-calender menu-icon"></i>
-          <span class="menu-title">Calendar</span>
+            <a class="nav-link" data-toggle="collapse" href="#assignment" aria-expanded="false" aria-controls="report">
+              <i class="icon-pie-graph menu-icon"></i>
+              <span class="menu-title">Assignments & ILT</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="assignment">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="./addAssignment.httml"><i class="icon-head menu-icon" style="border: 1px solid black; border-radius: 5px; padding: 10px;">4</i></a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#calendar" aria-expanded="false" aria-controls="account-setting">
+              <i class="icon-contract menu-icon"></i>
+              <span class="menu-title">Calendar</span>
               <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="calendar">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"><a class="nav-link" href="./addEvent.html">Add Event</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./addEvent.html">Add Event</a></li>
               </ul>
             </div>
           </li>
@@ -347,16 +351,15 @@
                   <table class="table table-striped">
                     <thead>
                       <tr>
-                       
                         <th>
-                          Course
+                          Course name
                         </th>
                         <th>
-                          Category
+                          Duration
                         </th>
                          
                         <th>
-                          Last Updated on
+                          Start Date
                         </th>
                         <th>
                           Action
@@ -365,150 +368,40 @@
                     </thead>
                     <tbody>
                       <tr>
-                        
                         <td>
-                          Java
+                          <a href="./editcourse.html">Java</a>
                         </td>
                         <td>
                           45 Days
                         </td>
-                         
                         <td>
                           May 15, 2023
                         </td>
                         <td> 
-                          <button type="button" class="btn btn-info btn-rounded btn-icon" data-toggle="form" data-target="#editModal">
-                            <i class="ti-pencil"></i>
-                          </button>
-                          <button type="button" class="btn btn-danger btn-rounded btn-icon" data-toggle="modal" data-target="#trashModal">
-                            <i class="ti-trash"></i>
-                          </button>
+                           <button type="button" class="btn btn-info btn-rounded btn-icon" data-toggle="modal" data-target="#editModal">
+                          <i class="ti-pencil"></i>
+                        </button>
+                        <button type="button" class="btn btn-danger btn-rounded btn-icon" data-toggle="modal" data-target="#trashModal">
+                          <i class="ti-trash"></i>
+                        </button>
                       </td>
                       </tr>
                       <tr>
-                        
                         <td>
-                          Dot net
+                          <a href="./editcourse.html">Dot net</a>
                         </td>
                         <td>
                           45 Days
                         </td>
-                         
                         <td>
                           July 1, 2023
                         </td>
                         <td> 
-                          <button type="button" class="btn btn-info btn-rounded btn-icon" data-toggle="form" data-target="#editModal">
-                            <i class="ti-pencil"></i>
-                          </button>
-                          <button type="button" class="btn btn-danger btn-rounded btn-icon" data-toggle="modal" data-target="#trashModal">
-                            <i class="ti-trash"></i>
-                          </button>
-                     </td>
-                      </tr>
-                      <tr>
-                        
-                        <td>
-                          Python
-                        </td>
-                        <td>
-                          45 Days
-                        </td>
-                         
-                        <td>
-                          Apr 12, 2023
-                        </td>
-                        <td> 
-                          <button type="button" class="btn btn-info btn-rounded btn-icon" data-toggle="form" data-target="#editModal">
-                            <i class="ti-pencil"></i>
-                          </button>
-                          <button type="button" class="btn btn-danger btn-rounded btn-icon" data-toggle="modal" data-target="#trashModal">
-                            <i class="ti-trash"></i>
-                          </button>
-                     </td>
-                      </tr>
-                      <tr>
-                        
-                        <td>
-                          Node JS
-                        </td>
-                        <td>
-                          45 Days
-                        </td>
-                         
-                        <td>
-                          May 15, 2023
-                        </td>
-                        <td> 
-                          <button type="button" class="btn btn-info btn-rounded btn-icon" data-toggle="form" data-target="#editModal">
-                            <i class="ti-pencil"></i>
-                          </button>
-                          <button type="button" class="btn btn-danger btn-rounded btn-icon" data-toggle="modal" data-target="#trashModal">
-                            <i class="ti-trash"></i>
-                          </button>
-                     </td>
-                      </tr>
-                      <tr>
-                        
-                        <td>
-                          UI Technology
-                        </td>
-                        <td>
-                          45 Days
-                        </td>
-                         
-                        <td>
-                          May 03, 2023
-                        </td>
-                        <td> 
-                          <button type="button" class="btn btn-info btn-rounded btn-icon" data-toggle="form" data-target="#editModal">
-                            <i class="ti-pencil"></i>
-                          </button>
-                          <button type="button" class="btn btn-danger btn-rounded btn-icon" data-toggle="modal" data-target="#trashModal">
-                            <i class="ti-trash"></i>
-                          </button>
-                     </td>
-                      </tr>
-                      <tr>
-                        
-                        <td>
-                          MERN Stack
-                        </td>
-                        <td>
-                          45 Days
-                        </td>
-                         
-                        <td>
-                          April 05, 2023
-                        </td>
-                        <td> 
-                          <button type="button" class="btn btn-info btn-rounded btn-icon" data-toggle="form" data-target="#editModal">
-                            <i class="ti-pencil"></i>
-                          </button>
-                          <button type="button" class="btn btn-danger btn-rounded btn-icon" data-toggle="modal" data-target="#trashModal">
-                            <i class="ti-trash"></i>
-                          </button>
-                     </td>
-                      </tr>
-                      <tr>
-                        
-                        <td>
-                         MEAN Stack
-                        </td>
-                        <td>
-                          45 Days
-                        </td>
-                         
-                        <td>
-                          June 16, 2023
-                        </td>
-                        <td> 
-                          <button type="button" class="btn btn-info btn-rounded btn-icon" data-toggle="form" data-target="#editModal">
-                            <i class="ti-pencil"></i>
-                          </button>
-                          <button type="button" class="btn btn-danger btn-rounded btn-icon" data-toggle="modal" data-target="#trashModal">
-                            <i class="ti-trash"></i>
-                          </button>
+                          <button type="button" class="btn btn-info btn-rounded btn-icon" data-toggle="modal" data-target="#editModal"><i class="ti-pencil"></i>
+                       </button>
+                       <button type="button" class="btn btn-danger btn-rounded btn-icon" data-toggle="modal" data-target="#trashModal">
+                         <i class="ti-trash"></i>
+                       </button>
                      </td>
                       </tr>
                     </tbody>
@@ -533,13 +426,203 @@
     <!-- page-body-wrapper ends -->
   </div>
   <!-- container-scroller -->
-<!-- Modal -->
+<!--Add  Modal -->
 <div class="modal fade" id="myModal" role="dialog">
   <div class="modal-dialog"  > 
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-header">
         <h4>Add New Course </h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button> 
+      </div>
+      <div class="modal-body">
+        <div class="col-12 grid-margin">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Course Details</h4>
+              <form class="form-sample"> 
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">Course Name</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                  </div> 
+                </div>
+                
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">Category</label>
+                      <div class="col-sm-9">
+                        <select class="form-control">
+                          <option>Category1</option>
+                          <option>Category2</option>
+                          <option>Category3</option>
+                          <option>Category4</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div> 
+                </div>  
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">Course Image</label>
+                      <div class="col-sm-9">
+                        <input type="File" class="form-control" />
+                      </div>
+                    </div>
+                  </div> 
+                </div>  
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">Description</label>
+                      <div class="col-sm-9">
+                        <textarea name="" class="form-control" id="" cols="30" rows="10"></textarea>
+                      </div>
+                    </div>
+                  </div> 
+                </div> 
+                <div class="row"> 
+                  <div  >
+                    <input type="checkbox" class="form-control" />
+                  </div> 
+                      <label class=" col-sm-3 col-form-label">Active</label>
+                      <div  >
+                        <input type="checkbox" class="form-control" />
+                      </div>
+                      <label class="col-sm-8 col-form-label">Hide from course catalog</label>
+                        
+                </div> 
+                <div class="row">
+                  <div class="col-sm-5">
+                    <div>
+                      <a href="#" onclick="showMe('courseCode')"> <i class="icon-book menu-icon"></i> Course code </a>
+                    </div>
+                    <div>
+                      <a href="#" onclick="showMe('introVideo')"> <i class="icon-video menu-icon"></i> Intro video </a>
+                    </div>
+                    <div>
+                      <a href="#" onclick="showMe('capacity')">  <i class="icon-monitor menu-icon"></i> Capacity</a>
+                    </div>
+                    <div>
+                      <a href="#" onclick="showMe('timeOptions')"> <i class="icon-clock menu-icon"></i> Time options</a>
+                    </div>
+                    <div>
+                      <a href="#" onclick="showMe('certificate')"> <i class="icon-paper menu-icon"></i> Certificate </a>
+                    </div>
+                    <div>
+                      <a href="#" onclick="showMe('level')"><i class="icon-layers menu-icon"></i> Level </a>
+                    </div> 
+                  </div> 
+                </div>
+                <div class="row"> 
+                        <div id="courseCode"  class="listTab col-sm-12" style="display: none;">
+                          <div class="form-group row ">
+                            <label class=" col-sm-6 col-form-label">Course code </label>
+                            <div class=" col-sm-6" ><input type="text" value="Course Code"/>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="introVideo"  class="listTab col-sm-12" style="display: none;">
+                          <div class="form-group row ">
+                            <label class="  col-sm-6 col-form-label"> Intro video </label>
+                          <div class=" tab">
+                            <button class="tablinks active" onclick="openTab(event, 'youTube')">use youTube video</button>
+                            <button class="tablinks" onclick="openTab(event, 'uploadVideo')">Use a video</button> 
+                          </div>
+                          <div id="youTube" class="tabcontent" style="display: block;"> 
+                            <div> <input type="text" />
+                            </div>
+                         </div>
+                         <div id="uploadVideo"  class="tabcontent" style="display: none;"> 
+                          <div >
+                            <label for="images" class="drop-container">
+                              <span class="drop-title">Drop files here</span>
+                              or
+                              <input type="file" id="images" required>
+                            </label>
+                        </div>
+                        </div> 
+                          </div>
+                       </div> 
+                        <div id="capacity"  class="listTab col-sm-12" style="display: none;"> 
+                          <div class="form-group row ">
+                          <label  class=" col-sm-6 col-form-label">Capacity </label>
+                          <div class=" col-sm-6" > <input type="text" value="Capacity"/> </div>
+                        </div>
+                      </div>
+                        <div id="timeOptions"  class="listTab col-sm-12" style="display: none;"> 
+                          <div class="form-group row "> 
+                            <label class=" col-sm-6 col-form-label">Start date </label> 
+                            <div class=" col-sm-6" ><input type="datetime-local" /></div>
+                            <label class=" col-sm-6 col-form-label">Expiration date</label>
+                            <div class=" col-sm-6" ><input type="datetime-local" /></div>
+                    </div>
+                  </div>
+                        <div id="certificate"  class="listTab col-sm-12" style="display: none;">
+                          <div class="form-group row ">
+                          <label class=" col-sm-6 col-form-label">Certificate</label>
+                          <div class=" col-sm-6" >
+                            <select class="form-control">
+                              <option>Classic</option>
+                              <option>Fancy</option>
+                              <option>Mordern</option>
+                              <option>Simple</option> 
+                            </select>
+                          </div>
+                           
+                        </div></div>
+                        <div id="level" class="listTab col-sm-12" style="display: none;">
+                          <div class="form-group row ">
+                          <label class=" col-sm-6 col-form-label">Level</label>
+                          <div class=" col-sm-6" >
+                            <select class="form-control">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option> 
+                            </select>
+                          </div>
+                         </div>
+                        </div>
+
+                </div>
+                </div> 
+              </form>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div> 
+      <div class="modal-footer">
+        <div class = "btn-group">
+          <button type = "button" class = "btn btn-primary dropdown-toggle" data-toggle = "dropdown">
+            Save and select users
+          </button> 
+          <ul class = "dropdown-menu button-dropdown" role = "menu">
+             <li>Save and add content </li>
+             <li>Save and add another course </li>
+             <li>Save and go to course index</li> 
+          </ul> 
+       </div> 
+        <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+    
+  </div>
+</div> 
+<!--Edit Modal -->
+<div class="modal fade" id="editModal" role="dialog">
+  <div class="modal-dialog"  > 
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4>Edit Course </h4>
         <button type="button" class="close" data-dismiss="modal">&times;</button> 
       </div>
       <div class="modal-body">
@@ -596,15 +679,97 @@
                         
                 </div> 
                 <div class="row">
-                    <ul style="list-style: none;">
-                      <li> <i class="icon-book menu-icon"></i> Course code</li>
-                      <li> <i class="icon-square-minus menu-icon"></i> Price</li>
-                      <li> <i class="icon-video menu-icon"></i> Intro video</li>
-                      <li> <i class="icon-monitor menu-icon"></i> Capacity</li>
-                      <li> <i class="icon-clock menu-icon"></i> Time options</li>
-                      <li> <i class="icon-paper menu-icon"></i> Certificate</li>
-                      <li> <i class="icon-layers menu-icon"></i> Level</li>
-                    </ul>
+                  <div class="col-sm-5">
+                    <div>
+                      <a href="#" onclick="showMe('courseCode1')"> <i class="icon-book menu-icon"></i> Course code </a>
+                    </div>
+                    <div>
+                      <a href="#" onclick="showMe('introVideo1')"> <i class="icon-video menu-icon"></i> Intro video </a>
+                    </div>
+                    <div>
+                      <a href="#" onclick="showMe('capacity1')">  <i class="icon-monitor menu-icon"></i> Capacity</a>
+                    </div>
+                    <div>
+                      <a href="#" onclick="showMe('timeOptions1')"> <i class="icon-clock menu-icon"></i> Time options</a>
+                    </div>
+                    <div>
+                      <a href="#" onclick="showMe('certificate1')"> <i class="icon-paper menu-icon"></i> Certificate </a>
+                    </div>
+                    <div>
+                      <a href="#" onclick="showMe('level1')"><i class="icon-layers menu-icon"></i> Level </a>
+                    </div> 
+                  </div> 
+                </div>
+                <div class="row"> 
+                        <div id="courseCode1"  class="listTab col-sm-12" style="display: none;">
+                          <div class="form-group row ">
+                            <label class=" col-sm-6 col-form-label">Course code </label>
+                            <div class=" col-sm-6" ><input type="text" value="Course Code"/>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="introVideo1"  class="listTab col-sm-12" style="display: none;">
+                          <div class="form-group row ">
+                            <label class="  col-sm-6 col-form-label"> Intro video </label>
+                          <div class=" tab">
+                            <button class="tablinks active" onclick="openTab(event, 'youTube')">use youTube video</button>
+                            <button class="tablinks" onclick="openTab(event, 'uploadVideo')">Use a video</button> 
+                          </div>
+                          <div id="youTube" class="tabcontent" style="display: block;"> 
+                            <div> <input type="text" />
+                            </div>
+                         </div>
+                         <div id="uploadVideo1"  class="tabcontent" style="display: none;"> 
+                          <div >
+                            <label for="images" class="drop-container">
+                              <span class="drop-title">Drop files here</span>
+                              or
+                              <input type="file" id="images" required>
+                            </label>
+                        </div>
+                        </div> 
+                          </div>
+                       </div> 
+                        <div id="capacity1"  class="listTab col-sm-12" style="display: none;"> 
+                          <div class="form-group row ">
+                          <label  class=" col-sm-6 col-form-label">Capacity </label>
+                          <div class=" col-sm-6" > <input type="text" value="Capacity"/> </div>
+                        </div>
+                      </div>
+                        <div id="timeOptions1"  class="listTab col-sm-12" style="display: none;"> 
+                          <div class="form-group row "> 
+                            <label class=" col-sm-6 col-form-label">Start date </label> 
+                            <div class=" col-sm-6" ><input type="datetime-local" /></div>
+                            <label class=" col-sm-6 col-form-label">Expiration date</label>
+                            <div class=" col-sm-6" ><input type="datetime-local" /></div>
+                    </div>
+                  </div>
+                        <div id="certificate1"  class="listTab col-sm-12" style="display: none;">
+                          <div class="form-group row ">
+                          <label class=" col-sm-6 col-form-label">Certificate</label>
+                          <div class=" col-sm-6" >
+                            <select class="form-control">
+                              <option>Classic</option>
+                              <option>Fancy</option>
+                              <option>Mordern</option>
+                              <option>Simple</option> 
+                            </select>
+                          </div>
+                           
+                        </div></div>
+                        <div id="level1" class="listTab col-sm-12" style="display: none;">
+                          <div class="form-group row ">
+                          <label class=" col-sm-6 col-form-label">Level</label>
+                          <div class=" col-sm-6" >
+                            <select class="form-control">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option> 
+                            </select>
+                          </div>
+                         </div>
+                        </div> 
                 </div>
               </form>
               </form>
@@ -615,12 +780,12 @@
       <div class="modal-footer">
         <div class = "btn-group">
           <button type = "button" class = "btn btn-primary dropdown-toggle" data-toggle = "dropdown">
-            Add Course  
+            Update  
           </button> 
           <ul class = "dropdown-menu button-dropdown" role = "menu">
-             <li>Save and add content </li>
-             <li>Save and add another course </li>
-             <li>Save and go to course index</li> 
+             <li>Update and add content </li>
+             <li>Update and add another course </li>
+             <li>Update and go to course index</li> 
           </ul> 
        </div> 
         <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
@@ -628,10 +793,62 @@
     </div>
     
   </div>
-</div> 
+</div>
+<!--Delete  Modal -->
+<div class="modal fade" id="trashModal" role="dialog">
+  <div class="modal-dialog"  > 
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4>Delete Course </h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button> 
+      </div>
+      <div class="modal-body">
+        <div class="col-12 grid-margin">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Are you sure, you want to delete this Course Details</h4>
+               
+            </div>
+          </div>
+        </div>
+      </div> 
+      <div class="modal-footer"> 
+          <button type = "button" class = "btn btn-primary">
+            Delete  
+          </button>  
+        <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+    
+  </div>
+</div>
   <!-- plugins:js -->
   <script src="vendors/js/vendor.bundle.base.js"></script>
   <!-- endinject -->
+  <script>
+    function showMe(event){     
+    let i, listTab;
+      listTab = document.getElementsByClassName("listTab");
+      for (i = 0; i < listTab.length; i++) {
+        listTab[i].style.display = "none";
+      }
+      document.getElementById(event).style.display = "block"; 
+    }  
+    function openTab(evt, actionName) {
+      let i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(actionName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  </script>
   <!-- Plugin js for this page -->
   <script src="vendors/chart.js/Chart.min.js"></script>
   <script src="vendors/datatables.net/jquery.dataTables.js"></script>
